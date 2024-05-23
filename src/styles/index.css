@@ -1,6 +1,150 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Your own custom component styles */
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi-Bold.otf");
+    font-weight: bold;
+}
+
+.button-gradient {
+    background: linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+}
+
+.dasboard-container {
+    height: calc(100vh - 4rem);
+    max-width: 100rem;
+}
+.header-max-width {
+    max-width: 100rem;
+}
+
+.left-gradient {
+    position: fixed;
+    width: 57rem;
+    height: 25rem;
+    left: -53rem;
+    top: 24rem;
+    background: radial-gradient(50% 50% at 50% 50%, #4198fe 0%, #cc3cff 100%);
+    opacity: 0.6;
+    filter: blur(500px);
+    z-index: 0;
+}
+.right-top-gradient {
+    position: fixed;
+    width: 22rem;
+    height: 26rem;
+    left: 96%;
+    top: -10rem;
+    background: #4a46ff;
+    filter: blur(600px);
+    z-index: 0;
+}
+.right-middle-gradient {
+    position: fixed;
+    width: 262px;
+    height: 262px;
+    left: 1214px;
+    top: 399px;
+
+    background: #020205;
+    filter: blur(480px);
+    z-index: 0;
+}
+.right-bottom-gradient {
+    position: fixed;
+    width: 105rem;
+    height: 11rem;
+    left: 80%;
+    top: 53rem;
+    background: #ffb1ee;
+    filter: blur(300px);
+    z-index: 0;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing-1 {
+    position: absolute;
+    width: 25.875rem;
+    height: 30.875rem;
+    left: -20.5rem;
+    top: -4.311999999999998rem;
+    background: #7514c1;
+    opacity: 0.4;
+    filter: blur(500px);
+    z-index: 0;
+}
+
+.landing-2 {
+    position: absolute;
+    width: 35rem;
+    height: 32rem;
+    left: -5rem;
+    top: -18rem;
+    background: #7514c1;
+    opacity: 0.4;
+    filter: blur(500px);
+}
+.landing-3 {
+    position: absolute;
+    width: 43rem;
+    height: 36rem;
+    left: 62rem;
+    top: 27rem;
+    background: #7514c1;
+    opacity: 0.4;
+    filter: blur(500px);
+}
+
+.landing-4 {
+    position: absolute;
+    width: 328px;
+    height: 347px;
+    left: 566px;
+    bottom: 0;
+
+    background: #b946ff;
+    opacity: 0.4;
+    filter: blur(600px);
+}
+
+.border-gradient {
+    /* border-image-source: linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+    border-image-slice: 1; */
+    border: solid 12px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: all ease-in-out 300ms;
+}
+.border-gradient:hover {
+    /* border-image-source: linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+    border-image-slice: 1; */
+    background-image: linear-gradient(black, black),
+        linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.hover-border-gradient {
+    border: solid 2px transparent;
+    position: relative;
+}
+/* .hover-border-gradient:hover {
+    border-image-source: linear-gradient(90deg, #5cbbff -2.21%, #cb5cff 100%);
+    border-image-slice: 1;
+    @apply rounded-md;
+} */
