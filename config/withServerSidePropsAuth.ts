@@ -23,16 +23,16 @@ export default (api: any) =>
             };
         }
 
-        if (!(req.session as any)?.auth) {
-            console.log("redirecting from here, no auth");
-            return {
-                props: {},
-                redirect: {
-                    destination: routes.Login,
-                    permanent: false,
-                },
-            };
-        }
+        // if (!(req.session as any)?.auth) {
+        //     console.log("redirecting from here, no auth");
+        //     return {
+        //         props: {},
+        //         redirect: {
+        //             destination: routes.Login,
+        //             permanent: false,
+        //         },
+        //     };
+        // }
 
         return api({ req, res });
     }, ironOptions);
